@@ -2,50 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PicTos Coin</title>
+    <title>PicTos Coin | Official Site</title>
     <style>
         body {
-            background-color: #000000;
-            color: #00ff00;
-            font-family: Arial, sans-serif;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000;
+            color: #e0e0e0;
             text-align: center;
-            padding: 50px;
+        }
+        header {
+            background: linear-gradient(90deg, #1a1a1a, #004d00);
+            padding: 30px 10px;
+            border-bottom: 3px solid gold;
+        }
+        header img {
+            width: 100px;
+            margin-bottom: 15px;
         }
         h1 {
-            color: #FFD700;
-            font-size: 48px;
+            color: gold;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
         }
-        .logo {
-            margin-top: 20px;
+        .highlight {
+            color: #00cc00;
+            font-weight: bold;
         }
-        .info {
-            background-color: #111111;
-            padding: 20px;
+        .section {
+            margin: 40px auto;
+            max-width: 800px;
+            background: #111;
+            border: 1px solid #00cc00;
+            padding: 30px;
             border-radius: 10px;
-            margin-top: 30px;
-            display: inline-block;
+            box-shadow: 0 0 20px #00cc00aa;
         }
-        .info p {
-            font-size: 18px;
+        .address, .mint, .supply {
+            margin: 10px 0;
+            font-family: monospace;
+            color: gold;
         }
         a {
-            color: #00ffcc;
+            color: #00ff99;
             text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            color: #999;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to PicTos Coin!</h1>
-    
-    <div class="logo">
-        <img src="logo.png" alt="PicTos Coin Logo" width="180">
+    <header>
+        <img src="logo.png" alt="PicTos Coin Logo">
+        <h1>Welcome to <span class="highlight">PicTos Coin</span>!</h1>
+        <p>The future of community-driven tokens on <strong>Solana</strong></p>
+    </header>
+
+    <div class="section">
+        <h2>Token Info</h2>
+        <p class="mint">Token Mint: 8GNTtSN7BGwXmncMEjWYsmDB7eYtr9Jfvn8nZHLUo5MM</p>
+        <p class="supply">Total Supply: 1,000,000,000,000,000 PICT</p>
+        <p><a href="https://solscan.io/token/8GNTtSN7BGwXmncMEjWYsmDB7eYtr9Jfvn8nZHLUo5MM" target="_blank">View on Solscan</a></p>
     </div>
 
-    <div class="info">
-        <p><strong>Token Address:</strong><br> 8GNTtSN7BGwXmncMEjWYsmDB7eYtr9Jfvn8nZHLUo5MM</p>
-        <p><strong>Total Supply:</strong><br> 1,000,000,000,000,000 PICT</p>
-        <p><strong>Owner Wallet:</strong><br> CzmnHEG88d7w8na41fAH2MuHRnFumLpPtDBCECzudBfo</p>
-        <p><strong>Join us on Telegram:</strong><br> <a href="https://t.me/pictoscoin" target="_blank">t.me/pictoscoin</a></p>
+    <div class="section">
+        <h2>Wallet Info</h2>
+        <p class="address">Main Wallet: CzmnHEG88d7w8na41fAH2MuHRnFumLpPtDBCECzudBfo</p>
+        <p><a href="https://solscan.io/account/CzmnHEG88d7w8na41fAH2MuHRnFumLpPtDBCECzudBfo" target="_blank">View Wallet on Solscan</a></p>
     </div>
+
+    <div class="section">
+        <h2>Join the Community</h2>
+        <p>Be a part of our mission on Telegram!</p>
+        <p><a href="https://t.me/pictoscoin" target="_blank">https://t.me/pictoscoin</a></p>
+    </div>
+
+    <footer>
+        &copy; 2025 PicTos Coin | Built with love on Solana
+    </footer>
 </body>
 </html>
